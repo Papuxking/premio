@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09071b" />
+    <meta
+      name="description"
+      content="Tu premio ha sido desbloqueado. Gracias por escanear el código QR."
+    />
+    <title>¡Premio desbloqueado! ✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora aurora-one" aria-hidden="true"></div>
+    <div class="aurora aurora-two" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <main class="page-shell">
+      <nav class="topbar" aria-label="Navegación principal">
+        <a class="brand" href="/" aria-label="Inicio">
+          <span class="brand-mark">✦</span>
+          <span>QR<span class="brand-accent">/</span>MAGIC</span>
+        </a>
+        <span class="scan-status" id="scanStatus"><span class="status-dot"></span> Escaneo verificado</span>
+      </nav>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> ACCESO ESPECIAL · 20.10.26</p>
+          <h1 id="hero-title">
+            El azar
+            <span class="gradient-text">te eligió.</span>
+          </h1>
+          <p class="hero-description">
+            Escaneaste el código correcto. Tu premio ya está desbloqueado. <strong>Avísale a los moderadores del evento</strong> para recibirlo.
+          </p>
+
+          <div class="reward-card">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-topline">
+              <span class="pill"><span class="pill-icon">✓</span> PREMIO CONFIRMADO</span>
+              <span class="card-code">#QR-2048</span>
+            </div>
+            <div class="reward-content">
+              <div class="prize-icon-wrap" aria-hidden="true">
+                <div class="prize-icon">✦</div>
+                <span class="spark spark-a">✦</span>
+                <span class="spark spark-b">✧</span>
+                <span class="spark spark-c">·</span>
+              </div>
+              <div>
+                <p class="reward-kicker">Has ganado</p>
+                <h2>Una experiencia<br /><strong>extraordinaria</strong></h2>
+                <p class="reward-note">Avísale a los moderadores del evento para validar y recibir tu premio.</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span>Válido para una persona</span>
+              <span class="footer-arrow">↗</span>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="primary-button" id="celebrateButton" type="button">
+              <span>Celebrar mi premio</span>
+              <span class="button-arrow">→</span>
+            </button>
+            <p class="microcopy moderator-notice" id="moderatorNotice">
+              <span class="notice-star">✦</span>
+              <span><strong>Muéstrales esta pantalla</strong><small>a los moderadores del evento</small></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="visual-stage" aria-label="Ilustración de caja de regalo">
+          <div class="orbit orbit-outer"></div>
+          <div class="orbit orbit-middle"></div>
+          <div class="orbit orbit-inner"></div>
+          <div class="gift-box">
+            <div class="gift-lid">
+              <span class="gift-bow bow-left"></span>
+              <span class="gift-bow bow-right"></span>
+              <span class="gift-knot"></span>
+            </div>
+            <div class="gift-body">
+              <span class="gift-ribbon ribbon-vertical"></span>
+              <span class="gift-ribbon ribbon-horizontal"></span>
+              <span class="gift-shine"></span>
+            </div>
+          </div>
+          <span class="floating-star star-one">✦</span>
+          <span class="floating-star star-two">✧</span>
+          <span class="floating-star star-three">✦</span>
+          <span class="floating-star star-four">·</span>
+          <div class="visual-caption">
+            <span class="caption-icon">↗</span>
+            <span><strong>01</strong> / 01<br /><small>premio desbloqueado</small></span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Hecho para celebrar lo inesperado.</span>
+        <span class="footer-decoration">✦ ✦ ✦</span>
+        <span>Tu suerte acaba de cambiar.</span>
+      </footer>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      <span class="toast-icon">✦</span>
+      <span>¡Disfruta tu premio!</span>
+    </div>
+    <div class="confetti-container" id="confetti" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
